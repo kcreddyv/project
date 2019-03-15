@@ -1,0 +1,265 @@
+{
+	"project": "dailyCI",
+	"branch": "dev_integration",
+	"component": [{
+		"git_repo_name": "dps_raw",
+		"src": [{
+			"source": "peink_pepto/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "wpp2_pepto/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "pelaser_pepto/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "pelaser_legacy/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "jam_pepto/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "wpp1_pepto/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "printernet_mhit/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "raw_common/",
+			"paths": [
+			{
+				"path": "notebooks/app",
+				"files": ["raw-processing-common.scala"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			}]
+		}]
+	},
+	{
+		"git_repo_name": "dps_redshiftloader",
+		"src": [{
+			"source": "",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/lib",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		}]
+	},
+	{
+		"git_repo_name": "dps_stdraw",
+		"src": [{
+			"source": "peink_pepto/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "pelaser/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow/legacy",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow/pepto",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow/common",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "",
+			"paths": [{
+				"path": "jar_ink_laser",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "ink_lake/",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		}]
+	},
+	{
+		"git_repo_name": "dps_referencedata",
+		"src": [{
+			"source": "peink/",
+			"paths": [{
+				"path": "reference_data",
+				"files": ["product_ref.csv"]
+			},
+			{
+				"path": "telemetry_data",
+				"files": ["*"]
+			}]
+		},
+		{
+			"source": "laser/",
+			"paths": [{
+				"path": "reference_data",
+				"files": ["*"]
+			},
+			{
+				"path": "telemetry_data",
+				"files": ["*"]
+			}]
+		}]
+	},
+	{
+		"git_repo_name": "dps_ocv",
+		"src": [{
+			"source": "",
+			"paths": [{
+				"path": "notebooks/app",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/lib",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/test",
+				"files": ["*"]
+			},
+			{
+				"path": "notebooks/workflow",
+				"files": ["*"]
+			}]
+		}]
+	},
+	{
+		"git_repo_name": "dps_commontools",
+		"src": [{
+			"source": "",
+			"paths": [{
+				"path": "notebooks/common_etl",
+				"files": ["*"]
+			}]
+		}]
+	}],
+	"destination": {
+		"s3_path": "s3://hp-bigdata-software-packages/dailyCI_packages"
+	}
+}
