@@ -5,25 +5,34 @@
 			"git_repo_name": "git-experiment",
 			"branch": "master",
 			"src": [{
-					"path": "sally-work-area/database/cdf",
+				"source" : "sally-work-area/database",
+				"paths" : [{
+					"path": "cdf",
 					"files": ["testfile_cdf_1.txt", "testfile_cdf_2.txt"]
 				},
 				{
-					"path": "sally-work-area/database/trident",
+					"path": "trident",
 					"files": ["testfile_trident_1.txt"]
 				}
 			]
+		}]
 		},
 		{
 			"git_repo_name": "database",
 			"branch": "master",
 			"src": [{
-					"path": "cdf",
-					"files": ["cdf1.txt"]
-				},
+				"source": "cdf",
+				"paths" : [{
+					"path": "",
+					"files": ["*"]
+				}]
+			},
 				{
+					"source" : "neptune",
+					"paths" :[{
 					"path": "neptune",
 					"files": ["neptune1.txt"]
+				}]
 				}
 			]
 		}
