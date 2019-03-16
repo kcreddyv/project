@@ -1,9 +1,9 @@
 {
 	"project_name": "pe-laser",
 	"version": "1.0",
+	"branch": "master",
 	"component": [{
 			"git_repo_name": "git-experiment",
-			"branch": "master",
 			"src": [{
 				"source" : "sally-work-area/database",
 				"paths" : [{
@@ -19,7 +19,6 @@
 		},
 		{
 			"git_repo_name": "database",
-			"branch": "master",
 			"src": [{
 				"source": "cdf",
 				"paths" : [{
