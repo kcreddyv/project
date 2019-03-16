@@ -30,7 +30,7 @@
 				{
 					"source" : "neptune",
 					"paths" :[{
-					"path": "neptune",
+					"path": "",
 					"files": ["neptune1.txt"]
 				}]
 				}
